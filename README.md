@@ -5,6 +5,11 @@ NFT - Non Funglible Token on vexanium
 ```bash
 ./cleos --url http://api.vex.proit.id:8080 push action stdvexassets create '{"author": "<author account>", "category":"painting","owner": "<owner account>", "idata": "{\"name\":\"I Kadek Oka Sugawa\"}", "mdata": "{\"name\": \"Lukisan Monalisa\"}", "requireclaim": 0}' -p <author account>
 ```
+#### example idata more than one
+idata is imutable can not be change
+```python
+string idata = "{\"name\": I Kadek, \"date\": 18/06/2021, \"time\": \"17:11\" }";
+```
 ## list
 ```bash
 ./cleos --url http://api.vex.proit.id:8080 get table stdvexassets <account> sassets
